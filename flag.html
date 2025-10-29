@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+   <div id="b1"></div>
+   <div id="b2"></div>
+   <div id="b3"></div>
+   <div id="ball"></div>
+   </div>
+   <style>
+    *{
+        background-color:black;
+    }
+      #b1{
+        height: 150px;
+        width: 300px;
+        padding: 10px;
+        margin: 1px;
+        border: 10px border-color:white;
+        background-color:yellow;
+      }
+      #b2{
+        height: 150px;
+        width: 300px;
+        padding: 10px;
+        margin: 1px;
+        border: 1px;
+        background-color:red;
+      }
+    
+      @keyframes moveRight {
+        0%{
+            left:0;
+        }
+        100%{
+            left: calc(100% - 50px);
+        }
+        
+      }
+   </style>
+</body>
+</html>

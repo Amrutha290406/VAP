@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+   <div id="b1"></div>
+   <div id="b2"></div>
+   <div id="b3"></div>
+   <div id="ball">   HELLO</div>
+   </div>
+   <style>
+    #bb{
+        height: 400px;
+        width: 150px;
+        background-color: rgb(69, 173, 173);
+        border: 1px dotted black;
+    }
+      #b1{
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 1px;
+        border: 1px;
+        background-color:darkcyan;
+        border-radius: 50%;
+      }
+      #b2{
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 1px;
+        border: 1px;
+        background-color:lightcoral;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      #b3{
+         height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 1px;
+        border: 1px;
+        background-color:rgb(227, 167, 227);
+        border-radius: 0%;
+      }
+      #ball{
+        width: 60px;
+        height: 60px;
+        background-color:salmon;
+        border-radius: 50%;
+        position: absolute;
+        top: 350px;
+        left:0;
+        animation: moveRight 3s linear infinite;
+      }
+      @keyframes moveRight {
+        0%{
+            left:0;
+        }
+        100%{
+            left: calc(100% - 50px);
+        }
+        
+      }
+   </style>
+</body>
+</html>
